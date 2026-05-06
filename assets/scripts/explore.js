@@ -43,7 +43,7 @@ function init() {
     utterance.voice = voices[Number(voiceSelect.value)];
 
     utterance.onstart = () => {
-      faceImage.src = 'assets/images/speaking.png';
+      faceImage.src = 'assets/images/smiling-open.png';
       faceImage.alt = 'Speaking face';
     };
 
