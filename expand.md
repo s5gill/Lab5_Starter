@@ -1,0 +1,11 @@
+1. It is important to put thought into your IDs and classes because HTML, CSS, and JavaScript all use them to connect to the same elements. HTML creates the element, CSS uses IDs and classes to style it, and JavaScript uses them to select and change it. Clear names make the code easier to understand, while unclear names make the project harder to fix later.
+
+2. Data attributes are custom HTML attributes that start with data-, and they are used to store extra information on an element. For example, an element could have data-user-id="25" to store a user ID. In JavaScript, data attributes can be accessed using .dataset, such as element.dataset.userId. They are useful because they let JavaScript store and read extra information, but they should not replace semantic HTML or microdata because they are mostly meant for scripts, not for giving public meaning to search engines or other tools.
+
+3. A DOM fragment is a temporary container for HTML elements before they are added to the real page. It is powerful because you can build multiple elements inside the fragment first and then add them to the page all at once. This can make the code cleaner and reduce unnecessary updates to the page.
+
+4. The point of a Virtual DOM is to let a framework, like React, compare changes before updating the real DOM. You gain easier and more organized UI updates because the framework handles many DOM changes for you. You lose some direct control because the framework manages the updates, and there can be extra overhead from using the framework.
+
+5. JavaScript uses className instead of class because class is a reserved word in JavaScript. Since class already has a special meaning in the language, the DOM uses className to read or change an element’s HTML class attribute.
+
+6. The difference between addEventListener() and something like onclick is that addEventListener() lets you add event behavior without replacing other event handlers. With onclick, assigning a new function can replace the old one. addEventListener() is better for larger projects because it is more flexible, while onclick is simpler and easier for small examples.
